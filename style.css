@@ -1,0 +1,276 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  overflow-x: hidden;
+}
+
+#wrapper.container-fluid {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.btn:focus,
+.btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.0rem rgba(0, 0, 0, 0);
+}
+
+#mainContents02 {
+  background-image: url(img/contents_02.jpg);
+  background-size: cover;
+  /* padding: 260px 100px; */
+  padding-top: 260px;
+  padding-bottom: 260px;
+}
+
+@media (max-width: 767.98px) {
+  #mainContents03 {
+    padding: 200px 50px !important;
+  }
+}
+
+#mainContents03 {
+  background-image: url(img/contents_03.jpg);
+  background-size: cover;
+  padding: 200px 0px;
+}
+
+/* @media (min-width: 768px) {
+  #mainContents03 {
+  padding: 200px 300px;
+  }
+} */
+
+/* #mainContents03::before {
+    content: "test";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: relative;
+    left:0;
+    top: 0;
+  } */
+.modal-header {
+  display: -ms-flexbox;
+  display: block !important;
+  /* -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-pack: justify;
+  justify-content: space-between; */
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+
+.carousel-indicators li {
+  box-sizing: content-box;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 14px;
+  height: 14px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-radius: 50%;
+  opacity: .5;
+  transition: opacity 0.6s ease;
+}
+
+.bg-blue {
+  background-color: #003087;
+}
+
+.btn-lightBlue {
+  color: #fff;
+  background-color: #0070ba;
+  border-color: #0070ba;
+}
+
+.btn-lightBlue:hover {
+  color: #fff;
+  background-color: #005c9a;
+  border-color: #005c9a;
+}
+
+.content_Link {
+  margin: 0 6px 0 0;
+}
+
+#blueContents {
+  padding: 9vh 0;
+}
+
+a {
+  color: #0070ba;
+  font-weight: 700;
+}
+
+.textCarousel .carousel-caption {
+  top: 15%;
+}
+
+.textCarousel .btn {
+  border-radius: 2rem !important;
+}
+
+.textCarousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-outline-light {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.btn-outline-light:hover {
+  color: #f8f9fa;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #f8f9fa;
+  text-decoration: underline;
+}
+
+.btn-outline-lightBlue {
+  color: #0070ba;
+  border-color: #0070ba;
+}
+
+.btn-outline-lightBlue:hover {
+  color: #0070ba;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #0070ba;
+  text-decoration: none;
+}
+
+.cs-w-35 {
+  width: 35% !important;
+}
+
+.btn-lg {
+  width: 350px;
+}
+
+#mainCarousel a {
+  font-size: 1em;
+  padding: 15px;
+  font-weight: bold;
+}
+
+#NavContainerFluid {
+  box-shadow: 0 0 10px 1px #0003, 0 0 10px 1px #fff3;
+}
+
+/* #NavContainer {
+    display: flex;
+    justify-content: space-between;
+  } */
+
+#logInBtn {
+  width: 84px;
+  height: 38px;
+}
+
+#modalLogo {
+  width: auto;
+  height: 45px;
+  display: block;
+}
+
+.bg-halfOp {
+  background: rgba(230, 245, 255, 0);
+  color: rgba(43, 43, 43, 0);
+  transition: all 0.5s linear 0.1s;
+  cursor: pointer;
+  /* 변신 : 성시속대 (속성 시간 속도 대기시간);  */
+}
+
+.bg-halfOp:hover {
+  background: rgba(230, 245, 255, 0.724);
+  color: rgba(43, 43, 43, 1);
+}
+
+.imgOverlay .btn {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.imgOverlay .card {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.imgOverlay .bg-success {
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: rgba(255, 255, 255, 0);
+  transition: all 1s;
+}
+
+.imgOverlay .card:hover .bg-success {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: rgba(255, 255, 255, 1);
+}
+
+.imgOverlay .card:hover .btn {
+  opacity: 1;
+}
+
+footer ul {
+  list-style: none;
+  padding-inline-start: 5px;
+}
+
+footer a {
+  color: black;
+}
+
+footer a:hover {
+  color: black;
+}
+
+.x_small {
+  font-size: 70%;
+}
+
+footer .language .border-right {
+  border-right: 0.1rem solid #dee2e6!important;
+}
+.flag-skr {
+  background-image: url(https://www.paypalobjects.com/digitalassets/c/website/marketing/global/shared/global/country-worldwide/sprite_countries_flag5.png);
+  background-repeat: no-repeat;
+  background-position: 5px -3254px;
+  
+}
+
+@media (min-width: 1700px) {
+  .d-xxl-block {
+    display:block !important;
+  }
+}
+@media (min-width: 1700px) {
+  .col-xxl-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .offset-xxl-4 {
+    margin-left: 33.333333%;
+  }
+}
+
+ 
