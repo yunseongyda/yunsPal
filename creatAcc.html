@@ -14,7 +14,8 @@
       .bg-banner {
         background: url('img/background-banner.jpg') no-repeat;
         background-attachment: fixed;
-        padding:400px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         background-size: cover;
         background-position: center bottom-100px;
       }
@@ -32,12 +33,33 @@
 
       .bg-banner .card-footer {
         padding: 0.75rem 1.25rem;
-        background-color: rgba(0, 0, 0, 0.03);
-        border-top: 1px solid rgba(0, 0, 0, 0.125);
+        background-color: white;
+        border-top: 0;
       }
 
       .bg-banner .card-footer:last-child {
         border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+      }
+
+      .rounded-10 {
+        border-radius: 10%;
+      }
+
+      .py-6{
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+      }
+      .py-7 {
+        padding-top: 4.25rem;
+        padding-bottom: 4.25rem;
+      }
+      .py-10 {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+      }
+
+      .collapse:not(.show) {
+        display: inline;
       }
     </style>
   </head>
@@ -100,10 +122,6 @@
               </g>
             </svg>
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto invisible">
               <li class="nav-item dropdown">
@@ -205,30 +223,115 @@
         <div class="col bg-banner">
           <div class="container">
             <div class="row">
-              <div class="col"></div>
-              <div class="col-6">
-                <div class="card text-center">
+              <div class="col-md"></div>
+              <div class="col-6 rounded-10">
+                <div class="card text-center p-5 rounded-10">
                   <div class="card-header">
                     <h2 class="font-weight-light">Join millions of people who use PayPal every day.</h2>
                     <p class="text-secondary pt-2">Create your PayPal account. It’s free to sign up.</p>
                   </div>
-                  <div class="card-body">
-                    <h3 class="card-title font-weight-bold text-danger">Buy with PayPal</h3>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <div class="card-body text-left">
+                    <div class="row">
+                      <h3 class="card-title font-weight-bold text-danger">Buy with PayPal</h3>
+                      <h5 class="card-title text-danger">For people who primarily want to buy online</h5>
+                      <ul class="card-text">
+                        <li>Buying is usually free. A currency conversion processing fee may apply for overseas transactions.</li>
+                        <li>Buy from millions of online stores across the world and keep earning credit card reward points.</li>
+                        <li>Your eligible purchases are covered by our Buyer Protection program.</li>
+                      </ul>
+                    </div> <!-- row -->
+                    <div class="row pt-4">
+                      <h3 class="card-title font-weight-bold text-primary">Receive payments with PayPal</h3>
+                      <h5 class="card-title text-primary">For people and businesses that primarily want to receive payments.</h5>
+                      <ul class="card-text">
+                        <li>No set up or monthly fees. Pay a transaction fee only when you receive payments.</li>
+                        <li>Accept global payments in 202 countries and 25 currencies.</li>
+                        <li>Our Seller Protection applies to your eligible sales.</li>
+                      </ul>
+                    </div> <!-- row -->
+                    
                   </div>
-                  <div class="card-footer text-muted">
-                    2 days ago
-                  </div>
-                </div>
-              </div>
-              <div class="col"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+                  <div class="card-footer">
+                    <a href="#" class="btn btn-primary p-3 px-5 rounded-pill">Next</a>
+                  </div> <!-- card-footer -->
+                </div> <!-- card -->
+              </div> <!-- col-6 -->
+              <div class="col-md"></div>
+            </div> <!-- row -->
+          </div> <!-- container -->
+        </div> <!-- col -->
+      </div> <!-- row -->
       
-    </div>
+    </div> <!-- container-fluid -->
+
+    <footer class="py-6">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-12 d-block d-md-none mb-2">
+            <div class="row">
+              <div class="col">
+                <div class="language">
+                  <a href="#" class="col-8 border-right pr-2">한국어</a>
+                  <a href="#" class="col-4 flag-skr "></a>
+                </div>
+              </div> <!-- col -->
+            </div> <!-- row -->
+          </div> <!-- col-12-->
+          <div class="col-12 col-md-9">
+            <ul class="float-left">
+              <li class="mr-3 d-inline"><a href="#">Help</a></li>
+              <li class="mr-3 d-inline flex-grow-1"><a href="#">Contact us</a></li>
+              <li class="mr-3 d-inline"><a href="#">Fees</a></li>
+              <li class="mr-3 d-inline"><a href="#">Security</a></li>
+              <li class="mr-3 d-inline"><a href="#">Shop</a></li>
+            </ul>
+          </div> <!-- col-12 -->
+          <div class="col-3 d-none d-md-block text-right">
+            <div class="row">
+              <div class="col">
+                <div class="language">
+                  <a href="index_kr.html" class="col-8 border-right pr-2">한국어</a>
+                  <a href="index_kr.html" class="col-4 flag-skr"></a>
+                </div>
+              </div> <!-- col -->
+            </div> <!-- row -->
+          </div> <!-- col-2-->
+          
+        </div> <!-- row -->
+        <div class="row border">
+        </div> <!-- row -->
+        <div class="row d-flex justify-content-between">
+          <div class="col-12 col-md-6">
+            <ul class="float-left">
+              <li class="mr-3 d-inline"><a href="#" class="text-secondary">About</a></li>
+              <li class="mr-3 d-inline"><a href="#" class="text-secondary">Newsroom</a></li>
+              <li class="mr-3 d-inline"><a href="#" class="text-secondary">Jobs</a></li>
+              <li class="mr-3 d-inline"><a href="#" class="text-secondary">Developers</a></li>
+              <li class="mr-3 d-inline"><a href="#" class="text-secondary">Partners</a></li>
+            </ul>
+          </div> <!-- col -->
+          <div class="row w-100 d-block d-md-none border ml-0 mr-0"></div>
+          <div class="col-12 col-md-6 d-flex justify-content-end">
+            <ul class="float-left">
+              <li class="mr-3 d-inline text-secondary">© 1999–2023</li>
+              <li class="mr-3 d-inline"><a href="#" class="text-secondary">Accessibility</a></li>
+              <li class="mr-3 d-inline"><a href="#" class="text-secondary">Cookies</a></li>
+              <li class="mr-3 d-inline"><a href="#" class="text-secondary">Privacy</a></li>
+              <li class="mr-3 d-inline"><a href="#" class="text-secondary">Legal</a></li>
+            </ul>
+          </div>
+        </div> <!-- row -->
+        <div class="row">
+          <div class="col">
+            <p class="x_small text-secondary">
+              PayPal Pte. Ltd. is licensed by the Monetary Authority of Singapore as a Major Payment Institution under the
+              Payment Services Act 2019.
+            </p>
+          </div>
+          
+        </div>
+      </div> <!-- container -->
+    </footer>
       <!-- Log In Modal -->
       <div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
