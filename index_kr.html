@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600&display=swap"
     rel="stylesheet"> <!-- google font-->
   <link rel="stylesheet" href="st.css">
+  <link rel="icon" href="img/yp_favicon_x.ico">
   <title>Send and receive payments easily with PayPal - PayPal</title>
 
   <style>
@@ -260,10 +261,10 @@
     footer .language .border-right {
       border-right: 0.1rem solid #dee2e6!important;
     }
-    .flag-skr {
+    .flag-us {
       background-image: url(https://www.paypalobjects.com/digitalassets/c/website/marketing/global/shared/global/country-worldwide/sprite_countries_flag5.png);
       background-repeat: no-repeat;
-      background-position: 5px -3254px;
+      background-position: 5px -383px;
       
     }
   </style>
@@ -276,7 +277,7 @@
       <div class="container" id="NavContainer">
         <div class="col-12 px-0">
           <nav class="navbar navbar-expand-lg navbar-light mx-0 px-0">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index_kr.html">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="136px"
                 height="43px" viewBox="0 0 246 60" version="1.1">
                 <!-- Generator: Sketch 3.6 (26304) - http://www.bohemiancoding.com/sketch -->
@@ -382,10 +383,10 @@
                 </button>
               </form>
               <form class="form-inline my-2 my-lg-0">
-                <button type="button" class="btn btn-lightBlue rounded-pill ml-lg-2" id="signUpBtn" data-toggle="modal"
-                  data-target="#signUpModal">
+                <a type="button" class="btn btn-lightBlue rounded-pill ml-lg-2" href="creatAcc.html">
                   가입하기
-                </button>
+                </a>
+              </form>
               </form>
             </div> <!-- navbar-collapse -->
           </nav>
@@ -401,7 +402,7 @@
                 <img src="img/paypal-mark-color.svg" class="img-fluid mx-auto d-block pl-5" id="modalLogo"
                   alt="paypal-mark-color">
                 <div class="w-100"></div>
-                <h5 class="modal-title d-flex justify-content-center mt-2" id="exampleModalLabel">Log In</h5>
+                <h5 class="modal-title d-flex justify-content-center mt-2" id="exampleModalLabel">로그인</h5>
 
               </div>
               <div class="modal-body">
@@ -413,70 +414,23 @@
                     <input type="password" class="form-control rounded-left" placeholder="Password" required>
                   </div>
                   <div class="form-group">
-                    <button type="submit" class="form-control btn btn-primary rounded submit px-3">Login</button>
+                    <button type="submit" class="form-control btn btn-primary rounded submit px-3">로그인</button>
                   </div>
                   <div class="form-group d-md-flex">
                     <div class="w-50">
-                      <label class="checkbox-wrap checkbox-primary">Remember Me
+                      <label class="checkbox-wrap checkbox-primary">기억하기
                         <input type="checkbox" checked>
                         <span class="checkmark"></span>
                       </label>
                     </div>
                     <div class="w-50 text-md-right">
-                      <a href="#">Forgot Password</a>
+                      <a href="#">비밀번호 찾기</a>
                     </div>
                   </div>
                 </form>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div> <!-- modal-content -->
-          </div> <!-- modal-dialog -->
-        </div> <!-- modal fade-->
-
-        <!-- Sign Up Modal -->
-        <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                <img src="img/paypal-mark-color.svg" class="img-fluid mx-auto d-block pl-5" id="modalLogo"
-                  alt="paypal-mark-color">
-                <div class="w-100"></div>
-                <h5 class="modal-title d-flex justify-content-center mt-2" id="exampleModalLabel">Sign Up</h5>
-
-              </div>
-              <div class="modal-body">
-                <form action="#" class="login-form">
-                  <div class="form-group">
-                    <input type="text" class="form-control rounded-left" placeholder="Username" required>
-                  </div>
-                  <div class="form-group d-flex">
-                    <input type="password" class="form-control rounded-left" placeholder="Password" required>
-                  </div>
-                  <div class="form-group">
-                    <button type="submit" class="form-control btn btn-primary rounded submit px-3">Login</button>
-                  </div>
-                  <div class="form-group d-md-flex">
-                    <div class="w-50">
-                      <label class="checkbox-wrap checkbox-primary">Remember Me
-                        <input type="checkbox" checked>
-                        <span class="checkmark"></span>
-                      </label>
-                    </div>
-                    <div class="w-50 text-md-right">
-                      <a href="#">Forgot Password</a>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
               </div>
             </div> <!-- modal-content -->
           </div> <!-- modal-dialog -->
@@ -575,20 +529,17 @@
       <div class="container">
         <div class="row row-cols-md-2">
           <div class="col text-white">
-            <h2 class="font-weight-light d-flex align-items-center">Pay anyone, anywhere.</h2>
-            <p class="small font-weight-normal d-flex align-items-center">Pay for your items or services more easily and
-              more securely, simply with an email address. No matter where they are, they'll be delighted to get your
-              payment.</p>
+            <h2 class="font-weight-light d-flex align-items-center">누구에게나 언제든지 결제가 가능합니다.</h2>
+            <p class="small font-weight-normal d-flex align-items-center">이메일 주소 하나로 더욱 쉽고 안전하게 물건이나 서비스 금액을 결제하세요. 모든 지역의 판매자들이 페이팔을 이용한 결제를 환영할 것입니다.</p>
             <a href="https://www.paypal.com/kr/webapps/mpp/send-payments-online?locale.x=en_KR"
-              class="text-white align-items-center">Send a payment</a>
+              class="text-white align-items-center">결제대금 보내기</a>
           </div>
           <div class="col text-white">
-            <h2 class="font-weight-light d-flex align-items-center">Request payments easily.</h2>
-            <p class="small font-weight-normal d-flex align-items-center">Requesting a payment is a friendly reminder
-              for a job well done. They'll get an invitation to pay any way they like without having to think about it.
+            <h2 class="font-weight-light d-flex align-items-center">결제 요청, 간편하게 하세요.</h2>
+            <p class="small font-weight-normal d-flex align-items-center">결제 요청은 결제가 원활하게 진행되도록 안내하는 도구입니다. 원하는 방법으로 결제할 수 있기 때문에 사용자는 지불 방식을 고민할 필요가 없습니다.
             </p>
             <a href="https://www.paypal.com/kr/webapps/mpp/send-payments-online?locale.x=en_KR"
-              class="text-white align-items-center">Request a payment</a>
+              class="text-white align-items-center">결제 요청하기</a>
           </div>
         </div> <!-- row -->
       </div> <!-- container -->
@@ -597,13 +548,11 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h3 class="text-white">Manage your recurring payments easily</h3>
-            <p class="small font-weight-bold text-white">Whether it’s monthly subscriptions, recurring bills or
-              instalment plans, it’s a lot easier to keep track and manage your recurring payments with Automatic
-              Payments.</p>
+            <h3 class="text-white">간편한 반복결제 관리</h3>
+            <p class="small font-weight-bold text-white">
+              자동 결제를 통해 월 사용료, 반복 요금 청구서 또는 할부 결제 등을 추적하고 훨씬 더 편리하게 반복결제를 관리할 수 있습니다.</p>
             <a href="https://www.paypal.com/kr/webapps/mpp/automatic-payments?locale.x=en_KR"
-              class="text-white pt-1">Pay on
-              the go</a>
+              class="text-white pt-1">더 알아보기</a>
           </div> <!-- col -->
           <div class="col-xl"></div>
         </div>
@@ -615,12 +564,12 @@
           <img src="img/contents_04.jpg " alt="">
         </div>
         <div class="col-12 col-md-6 py-5">
-          <h3>Click with your customers worldwide.</h3>
-          <p class="small font-weight-normal">Start accepting payments from your customers, wherever they are. Accept
-            credit cards, debit cards and, of course, PayPal.</p>
+          <h3>전 세계 고객과 연결됩니다.</h3>
+          <p class="small font-weight-normal">
+            고객이 어디에 있든 간편하게 결제가 가능합니다. 고객은 페이팔은 물론, 신용카드나 직불카드로 결제할 수 있습니다.</p>
 
-          <a href="https://www.paypal.com/kr/webapps/mpp/pay-on-ebay?locale.x=en_KR">Get paid on your website</a> <a
-            href="https://www.paypal.com/kr/webapps/mpp/pay-online?locale.x=en_KR" class="pl-3">Email an invoice</a>
+          <a href="https://www.paypal.com/kr/webapps/mpp/pay-on-ebay?locale.x=en_KR">자사 웹사이트가 있는 경우</a>
+          <a href="https://www.paypal.com/kr/webapps/mpp/pay-online?locale.x=en_KR" class="pl-3">이메일 인보이스</a>
         </div>
       </div> <!-- row -->
     </div> <!-- container -->
@@ -631,43 +580,43 @@
           <div class="card bg-dark text-white">
             <img src="img/card_01.png" class="card-img" alt="card_01">
             <div class="card-img-overlay bg-halfOp bg-success">
-              <h5 class="card-title">Take control of your money</h5>
-              <p class="card-text ">Join millions of people who use PayPal every day.</p>
-              <p class="card-text small">Create your PayPal account. It’s free to sign up.</p>
-              <a href="" class="btn btn-primary">Get Started</a>
+              <h5 class="card-title">결제와 자금 관리, 페이팔로 시작해보시겠습니까?</h5>
+              <p class="card-text ">매일 수백만이 이용하는 PayPal과 함께하세요.</p>
+              <p class="card-text small">PayPal 계정을 만드세요. 가입은 무료입니다.</p>
+              <a href="" class="btn btn-primary">시작하기</a>
             </div>
           </div>
         </div> <!-- col -->
         <div class="col-6 col-md-3">
           <div class="card bg-dark text-white">
             <img src="img/card_02.png" class="card-img" alt="card_01">
-            <div class="card-img-overlay bg-halfOp">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <p class="card-text">Last updated 3 mins ago</p>
+            <div class="card-img-overlay bg-halfOp bg-success">
+              <h5 class="card-title">결제와 자금 관리, 페이팔로 시작해보시겠습니까?</h5>
+              <p class="card-text ">매일 수백만이 이용하는 PayPal과 함께하세요.</p>
+              <p class="card-text small">PayPal 계정을 만드세요. 가입은 무료입니다.</p>
+              <a href="" class="btn btn-primary">시작하기</a>
             </div>
           </div>
         </div> <!-- col -->
         <div class="col-6 col-md-3">
           <div class="card bg-dark text-white">
             <img src="img/card_03.png" class="card-img" alt="card_01">
-            <div class="card-img-overlay bg-halfOp">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <p class="card-text">Last updated 3 mins ago</p>
+            <div class="card-img-overlay bg-halfOp bg-success">
+              <h5 class="card-title">결제와 자금 관리, 페이팔로 시작해보시겠습니까?</h5>
+              <p class="card-text ">매일 수백만이 이용하는 PayPal과 함께하세요.</p>
+              <p class="card-text small">PayPal 계정을 만드세요. 가입은 무료입니다.</p>
+              <a href="" class="btn btn-primary">시작하기</a>
             </div>
           </div>
         </div> <!-- col -->
         <div class="col-6 col-md-3">
           <div class="card bg-dark text-white">
             <img src="img/card_04.png" class="card-img" alt="card_01">
-            <div class="card-img-overlay bg-halfOp">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <p class="card-text">Last updated 3 mins ago</p>
+            <div class="card-img-overlay bg-halfOp bg-success">
+              <h5 class="card-title">결제와 자금 관리, 페이팔로 시작해보시겠습니까?</h5>
+              <p class="card-text ">매일 수백만이 이용하는 PayPal과 함께하세요.</p>
+              <p class="card-text small">PayPal 계정을 만드세요. 가입은 무료입니다.</p>
+              <a href="" class="btn btn-primary">시작하기</a>
             </div>
           </div>
         </div> <!-- col -->
@@ -681,18 +630,18 @@
               <div class="col">
                 <div class="language">
                   <a href="index.html" class="col-8 border-right pr-2">English</a>
-                  <a href="index.html" class="col-4 flag-skr "></a>
+                  <a href="index.html" class="col-4 flag-us "></a>
                 </div>
               </div> <!-- col -->
             </div> <!-- row -->
           </div> <!-- col-12-->
           <div class="col-12 col-md-9">
             <ul class="float-left">
-              <li class="mr-3 d-inline"><a href="#">Help</a></li>
-              <li class="mr-3 d-inline flex-grow-1"><a href="#">Contact us</a></li>
-              <li class="mr-3 d-inline"><a href="#">Fees</a></li>
-              <li class="mr-3 d-inline"><a href="#">Security</a></li>
-              <li class="mr-3 d-inline"><a href="#">Shop</a></li>
+              <li class="mr-3 d-inline"><a href="#">도움말</a></li>
+              <li class="mr-3 d-inline flex-grow-1"><a href="#">문의하기</a></li>
+              <li class="mr-3 d-inline"><a href="#">수수료</a></li>
+              <li class="mr-3 d-inline"><a href="#">보안</a></li>
+              <li class="mr-3 d-inline"><a href="#">쇼핑</a></li>
             </ul>
           </div> <!-- col-12 -->
           <div class="col-3 d-none d-md-block text-right">
@@ -700,7 +649,7 @@
               <div class="col">
                 <div class="language">
                   <a href="index.html" class="col-8 border-right pr-2">English</a>
-                  <a href="index.html" class="col-4 flag-skr"></a>
+                  <a href="index.html" class="col-4 flag-us"></a>
                 </div>
               </div> <!-- col -->
             </div> <!-- row -->
@@ -712,29 +661,28 @@
         <div class="row d-flex justify-content-between">
           <div class="col-12 col-md-6">
             <ul class="float-left">
-              <li class="mr-3 d-inline"><a href="#" class="text-secondary">About</a></li>
-              <li class="mr-3 d-inline"><a href="#" class="text-secondary">Newsroom</a></li>
-              <li class="mr-3 d-inline"><a href="#" class="text-secondary">Jobs</a></li>
-              <li class="mr-3 d-inline"><a href="#" class="text-secondary">Developers</a></li>
-              <li class="mr-3 d-inline"><a href="#" class="text-secondary">Partners</a></li>
+              <li class="mr-3 d-inline"><a href="#" class="text-secondary">정보</a></li>
+              <li class="mr-3 d-inline"><a href="#" class="text-secondary">뉴스룸</a></li>
+              <li class="mr-3 d-inline"><a href="#" class="text-secondary">채용</a></li>
+              <li class="mr-3 d-inline"><a href="#" class="text-secondary">개발자</a></li>
+              <li class="mr-3 d-inline"><a href="#" class="text-secondary">파트너</a></li>
             </ul>
           </div> <!-- col -->
           <div class="row w-100 d-block d-md-none border ml-0 mr-0"></div>
-          <div class="col-12 col-md-6 d-flex justify-content-center">
+          <div class="col-12 col-md-6 d-flex justify-content-end">
             <ul class="float-left">
               <li class="mr-3 d-inline text-secondary">© 1999–2023</li>
-              <li class="mr-3 d-inline"><a href="#" class="text-secondary">Accessibility</a></li>
-              <li class="mr-3 d-inline"><a href="#" class="text-secondary">Cookies</a></li>
-              <li class="mr-3 d-inline"><a href="#" class="text-secondary">Privacy</a></li>
-              <li class="mr-3 d-inline"><a href="#" class="text-secondary">Legal</a></li>
+              <li class="mr-3 d-inline"><a href="#" class="text-secondary">접근성</a></li>
+              <li class="mr-3 d-inline"><a href="#" class="text-secondary">쿠키</a></li>
+              <li class="mr-3 d-inline"><a href="#" class="text-secondary">개인정보 취급방침</a></li>
+              <li class="mr-3 d-inline"><a href="#" class="text-secondary">이용약관</a></li>
             </ul>
           </div>
         </div> <!-- row -->
         <div class="row">
           <div class="col">
             <p class="x_small text-secondary">
-              PayPal Pte. Ltd. is licensed by the Monetary Authority of Singapore as a Major Payment Institution under the
-              Payment Services Act 2019.
+              PayPal Pte. Ltd.는 2019 지급서비스법에 따라 싱가포르 금융당국의 승인을 받아 주요 결제 기관으로 인가를 받았습니다.
             </p>
           </div>
           
