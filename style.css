@@ -17,7 +17,7 @@ body {
 }
 
 #mainContents02 {
-  background-image: url(img/contents_02.jpg);
+  background-image: url(image/main_img/contents_02.jpg);
   background-size: cover;
   /* padding: 260px 100px; */
   padding-top: 260px;
@@ -31,7 +31,7 @@ body {
 }
 
 #mainContents03 {
-  background-image: url(img/contents_03.jpg);
+  background-image: url(image/main_img/contents_03.jpg);
   background-size: cover;
   padding: 200px 0px;
 }
@@ -155,9 +155,15 @@ a {
   width: 35% !important;
 }
 
+.w-40 {
+  width: 40% !important;
+}
+
 .btn-lg {
   width: 350px;
 }
+
+.btn-radius
 
 #mainCarousel a {
   font-size: 1em;
@@ -167,6 +173,7 @@ a {
 
 #NavContainerFluid {
   box-shadow: 0 0 10px 1px #0003, 0 0 10px 1px #fff3;
+  background-color: white;
 }
 
 /* #NavContainer {
@@ -240,6 +247,16 @@ footer a:hover {
   font-size: 70%;
 }
 
+.large {
+  font-size: 3rem;
+  letter-spacing: 0.02rem;
+}
+
+.x-large {
+  font-size: 300%;
+  letter-spacing: 0.1rem;
+}
+
 footer .language .border-right {
   border-right: 0.1rem solid #dee2e6!important;
 }
@@ -249,6 +266,8 @@ footer .language .border-right {
   background-position: 5px -3254px;
   
 }
+
+
 
 @media (min-width: 1700px) {
   .d-xxl-block {
@@ -273,4 +292,31 @@ footer .language .border-right {
   }
 }
 
- 
+.text-sky {
+  color: #33B0E5 !important;
+}
+
+
+
+.py-6 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.font-weight-semiBold {
+  font-weight: 500 !important;
+}
+
+.font-weight-semiLight {
+  font-weight: 350 !important;
+}
+
+.circle {
+  border: 1px solid silver;
+  padding: 4px 11px;
+  border-radius: 50%;
+  width: 35px;
+  float: left;
+  margin-right: 20px;
+}
+

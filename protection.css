@@ -1,0 +1,13 @@
+#bg-banner1 {
+    background-image: url(image/serve_img/protection/buyer-protection-hero.jpg);
+    padding: 200px 0px;
+    background-size: cover;
+}
+
+#bg-banner2 {
+    background-image: url(image/serve_img/protection/PP-video-matt.jpg);
+    /* padding: 200px 0px; */
+    background-position: center center;
+    height: 520px;
+    background-size: cover;
+}
